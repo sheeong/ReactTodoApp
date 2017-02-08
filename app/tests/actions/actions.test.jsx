@@ -1,7 +1,7 @@
 var expect = require('expect');
 var actions = require('actions');
 
-describe('actions', () => {
+describe('Actions', () => {
   it('should generate search text action', () => {
     var action = {
       type: 'SET_SEARCH_TEXT',
@@ -23,7 +23,7 @@ describe('actions', () => {
     expect(res).toEqual(action);
   })
 
-  it('should generate toggle show completed', () => {
+  it('should generate toggle show completed action', () => {
     var action = {
       type: 'TOGGLE_SHOWCOMPLETED'
     };
@@ -32,7 +32,7 @@ describe('actions', () => {
     expect(res).toEqual(action);
   })
 
-  it('should generate toggle todo', () => {
+  it('should generate toggle todo action', () => {
     var action = {
       type: 'TOGGLE_TODO',
       id: 123
