@@ -89,7 +89,7 @@ describe('Actions', () => {
 
     expect(res).toEqual(action);
   });
-/*
+
   describe('Tests with firebase todos', () => {
     var testTodoRef;
     var uid;
@@ -100,7 +100,7 @@ describe('Actions', () => {
 
       //firebase.auth().signInWithCredential(credential).then( (user) => {
       firebase.auth().signInAnonymously().then((user) => {
-        console.log(user);
+        //console.log(user);
         uid = user.uid;
         todosRef = firebaseRef.child(`users/${uid}/todos`);
         return todosRef.remove();
@@ -174,5 +174,5 @@ describe('Actions', () => {
       }).catch (done);
     });
   });
-  */
+  
 });
